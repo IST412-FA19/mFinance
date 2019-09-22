@@ -1,0 +1,75 @@
+public class User {
+    
+    private String firstName;
+    private String lastName;
+    private String eMail;
+    private String phoneNum;
+  
+        
+    public User (String newFirstName, String newLastName, String newEMail, String newPhoneNum) {
+        this.firstName = newFirstName;
+        this.lastName = newLastName;
+        this.eMail = newEMail;
+        this.phoneNum = newPhoneNum;
+    }
+
+    /**
+     * @return the firstName
+     */
+    public String getFirstName() {
+        return firstName;
+    }
+
+    /**
+     * @param firstName the firstName to set
+     */
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    /**
+     * @return the lastName
+     */
+    public String getLastName() {
+        return lastName;
+    }
+
+    /**
+     * @param lastName the lastName to set
+     */
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    /**
+     * @return the eMail
+     */
+    public String geteMail() {
+        return eMail;
+    }
+
+    /**
+     * @param eMail the eMail to set
+     */
+    public void seteMail(String eMail) {
+        this.eMail = eMail;
+    }
+
+    /**
+     * @return the phoneNum
+     */
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    /**
+     * @param phoneNum the phoneNum to set
+     */
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+    }
+
+    
+
+    
+}
