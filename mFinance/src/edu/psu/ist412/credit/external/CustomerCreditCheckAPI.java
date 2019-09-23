@@ -1,4 +1,4 @@
-package externalCreditBureaus;
+package edu.psu.ist412.credit.external;
 
 /*
 * Package: Credit Bureau Companies
