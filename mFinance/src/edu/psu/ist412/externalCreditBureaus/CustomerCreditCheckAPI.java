@@ -1,13 +1,19 @@
 package externalCreditBureaus;
 
 /*
-* Credit Bureau Companies
-* This API should be used to request credit scores and credit history
+* Package: Credit Bureau Companies
+* This package will include the classes associated with obtaining customer
+* credit history and and an API will be designed to request credit scores and credit history
 * for applicant's requesting a loan. 
- */
+*
+* Some Classes to be included in this package are:
+* Abstract class for credit request type (Credit Score only, Credit Report, Credit History, etc)
+* Interface to connect to Credit Bureua companies (using API)
+*/
 
 /**
- * v.1.01
+ * The following is an example of some of the attributes and methods used to obtain customer 
+ * credit history data.
  * @author Team 03
  */
 public class CustomerCreditCheckAPI {
