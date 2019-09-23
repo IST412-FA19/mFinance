@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package externalCreditBureaus;
 
 /*
-* Financial institutions
-* including public and private lenders can use the fields in this API to request
-* for customer data for transactions. This API can also be used to request for
-* a customer's customerTransferAPI standing and account status.
+* Credit Bureau Companies
+* This API should be used to request credit scores and credit history
+* for applicant's requesting a loan. 
  */
 
 /**
@@ -17,13 +11,10 @@ package externalCreditBureaus;
  * @author Team 03
  */
 public class CustomerCreditCheckAPI {
-    private String firstName;
-    private String lastName;
-    private double balance;
-    private long accountID;
-    private double toTransfer;
-    private boolean balanceVerified;
-    private double transferAmount;
+    private int score;
+    private String creditHistory;
+    private long transactionID;
+    private int del_count_30days;
     
     /**
      * This is the default constructor for the Bank API. 
@@ -32,31 +23,25 @@ public class CustomerCreditCheckAPI {
     }
 
     /**
-     * Returns customerFirstName for this transaction
-     * @return A string representing the customer name for this account
+     * Returns credit score to assist in determining an applicant's lending approval
+     * @return An int representing the credit score number for the individual
      */
-    public String getCustomerFirstName(){
-        return this.firstName;
-    }
-        /**
-     * Returns customerLastName for this transaction
-     * @return A string representing the customer name for this account
-     */
-    public String getCustomerLastName(){
-        return this.lastName;
+    public int getCreditScore(){
+        return this.score;
     }
     /**
-     * Sets the total amount for the transaction
-     * @param requestAmount A double representing the amount for the transaction
+     * Returns a document consisting of an individual's credit history
+     * @return A string representing the customer name for this account
      */
-    public String amountToTransfer(double requestAmount){
-        this.toTransfer = requestAmount;
-        /**Account will verify that the customer has the balance to cover
-        *The requestedAmount, if true, returns confirmation of amount
-        *this.balanceVerified = Account.verifyBalance(this.toTransfer);
-        *If true, this.transferAmount=this.toTransfer;
-        */
-        return "Verification: "+ balanceVerified + " Amount to Transfer: " + this.transferAmount;
+    public String getCreditHistory(){
+        return this.creditHistory;
+    }
+    /**
+     * Returns the count of delinquent payments greater 30 days late
+     * @return An int representing the number of delinquent payments over 30 days late
+     */
+    public int del_payments_30(){
+        return this.del_count_30days;
     }
     
     /**
@@ -64,7 +49,7 @@ public class CustomerCreditCheckAPI {
      * @return A long representing the transactionID for the fund transfer
      */
     public long transactionID(){
-        return this.accountID;
+        return this.transactionID;
     }
     
 }
