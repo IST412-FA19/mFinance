@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package edu.psu.ist412.banks.external;
 
 /*
@@ -14,7 +10,7 @@ package edu.psu.ist412.banks.external;
 
 /**
  * v.1.01
- * @author Team 03
+ * @author Randi Semera
  */
 public class CustomerTransferAPI {
     private String firstName;

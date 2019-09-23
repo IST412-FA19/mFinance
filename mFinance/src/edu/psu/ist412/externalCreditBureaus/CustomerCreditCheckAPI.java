@@ -14,7 +14,7 @@ package externalCreditBureaus;
 /**
  * The following is an example of some of the attributes and methods used to obtain customer 
  * credit history data.
- * @author Team 03
+ * @author Randi Semera
  */
 public class CustomerCreditCheckAPI {
     private int score;
