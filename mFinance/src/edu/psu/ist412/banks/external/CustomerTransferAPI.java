@@ -48,6 +48,7 @@ public class CustomerTransferAPI {
     /**
      * Sets the total amount for the transaction
      * @param requestAmount A double representing the amount for the transaction
+     * @return if an account is verified and the amount to be transferred if verified
      */
     public String amountToTransfer(double requestAmount){
         this.toTransfer = requestAmount;
