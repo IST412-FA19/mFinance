@@ -12,7 +12,8 @@ public class Customer {
     the application. 
     */
     
-    //variables
+    //edited by gRamos
+    
     private String fName;
     private String lName;
     
