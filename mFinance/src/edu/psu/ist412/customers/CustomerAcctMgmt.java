@@ -14,5 +14,7 @@ public class CustomerAcctMgmt {
     
     public CustomerAcctMgmt(Customer cust){
         
+        this.customer = cust;
+        
     }
 }
