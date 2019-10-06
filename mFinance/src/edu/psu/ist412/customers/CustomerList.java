@@ -10,6 +10,7 @@ public class CustomerList {
     
     //edited by gramos   
     protected Customer customer;
+    protected ArrayList<Customer> customerList;
     
     public CustomerList(Customer cust){
         
@@ -19,6 +20,14 @@ public class CustomerList {
         
         customerList.add(customer);
         
+    }
+    
+    public ArrayList<Customer> getCustomerList(){
+        return customerList;
+    }
+    
+    public void setCustomerList(ArrayList<Customer> customerList){
+        this.customerList = customerList;
     }
 
     /**
