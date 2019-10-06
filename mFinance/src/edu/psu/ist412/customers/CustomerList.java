@@ -1,6 +1,7 @@
 
 package edu.psu.ist412.customers;
 
+import java.util.ArrayList;
 /**
  *
  * @author Randi Semera
@@ -8,9 +9,32 @@ package edu.psu.ist412.customers;
 public class CustomerList {
     
     //edited by gramos   
+    protected Customer customer;
     
-    public CustomerList(){
+    public CustomerList(Customer cust){
+        
+        ArrayList<Customer> customerList = new ArrayList<Customer>();
+        
+        this.customer = cust;
+        
+        customerList.add(customer);
         
     }
+
+    /**
+     * @return the customer
+     */
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    /**
+     * @param customer the customer to set
+     */
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+    
+    
     
 }
