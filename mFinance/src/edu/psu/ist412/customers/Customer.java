@@ -11,6 +11,8 @@ public class Customer {
     The API will provide access to the customer information that is contained within
     the application. 
     */
+    
+    //variables
     private String fName;
     private String lName;
     
