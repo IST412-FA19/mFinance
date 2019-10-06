@@ -9,4 +9,8 @@ public class CustomerList {
     
     //edited by gramos   
     
+    public CustomerList(){
+        
+    }
+    
 }
