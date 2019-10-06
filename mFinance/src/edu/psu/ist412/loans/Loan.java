@@ -20,10 +20,10 @@ public class Loan {
     */
     
     private int loanID;
-    private int loanAmount;
+    private long loanAmount;
     private Customer customer;
     
-    public Loan (int loanID, int loanAmount, Customer customer){
+    public Loan (int loanID, long loanAmount, Customer customer){
         this.loanID = loanID;
         this.loanAmount = loanAmount;
         this.customer = customer;
