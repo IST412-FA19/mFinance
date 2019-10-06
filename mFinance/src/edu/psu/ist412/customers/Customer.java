@@ -68,19 +68,5 @@ public class Customer {
     public String getEmail(){
         return this.email;
     }
-    
-    
-    
-    
-    //edited by gRamos
-    
-    private String fName;
-    private String lName;
-    
-    
-    public Customer(){
         
-        
-        
-}
 }
