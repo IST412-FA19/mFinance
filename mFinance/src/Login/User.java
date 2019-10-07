@@ -10,5 +10,43 @@ package Login;
  * @author Randi Semera
  */
 public class User {
+    protected String userName;
+    protected String userPass;
+    
+    
+    public User(String uName, String uPass){
+        
+        this.userName = uName;
+        this.userPass = uPass;
+    
+}
+
+    /**
+     * @return the userName
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * @return the userPass
+     */
+    public String getUserPass() {
+        return userPass;
+    }
+
+    /**
+     * @param userName the userName to set
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    /**
+     * @param userPass the userPass to set
+     */
+    public void setUserPass(String userPass) {
+        this.userPass = userPass;
+    }
     
 }
