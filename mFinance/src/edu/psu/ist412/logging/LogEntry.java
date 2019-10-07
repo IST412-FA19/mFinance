@@ -14,6 +14,96 @@ import java.time.format.DateTimeFormatter;
  */
 public class LogEntry {
     /**
+     * Retrieves the protocol version in use.
+     * 
+     * @return Protocol version in use. 
+     */
+    public int getProtocolVersion() {
+        return protocolVersion;
+    }
+    
+    /**
+     * Retrieves the facility code.
+     * 
+     * @return Facility which initiated the log entry. 
+     */
+    public FacilityCode getFacilityCode() {
+        return facilityCode;
+    }
+
+    /**
+     * Retrieves the message ID.
+     * 
+     * @return Unique identifier for the message. 
+     */
+    public MessageId getMsgId() {
+        return msgId;
+    }
+
+    /**
+     * Retrieves the severity of the log message.
+     * 
+     * @return Severity of the log message. 
+     */
+    public Severity getSeverity() {
+        return severity;
+    }
+
+    /**
+     * Retrieves the name of the application which initiated the log entry.
+     * 
+     * @return Name of the running application.
+     */
+    public String getAppName() {
+        return appName;
+    }
+    
+    /**
+     * Retrieves the system that the log was created on.
+     * 
+     * @return System that the log is from. 
+     */
+    public String getHostname() {
+        return hostname;
+    }
+
+    /**
+     * Retrieves data along with its associated parameters.
+     * 
+     * @return Data with associated parameters. 
+     */
+    public String getStructuredData() {
+        return structuredData;
+    }
+
+    /**
+     * Retrieves the ID of the application process.
+     * 
+     * @return Process identifier. 
+     */
+    public String getProcId() {
+        return procId;
+    }
+
+    /**
+     * Retrieves the message text.
+     * 
+     * @return Message text. 
+     */
+    public String getMsg() {
+        return msg;
+    }
+
+    /**
+     * Retrieves the log entry timestamp.
+     * 
+     * @return Log timestamp. 
+     */
+    public ZonedDateTime getTimestamp() {
+        return timestamp;
+    }
+    
+    /**
      * Syslog protocol version in use
      */
     private final int protocolVersion;
