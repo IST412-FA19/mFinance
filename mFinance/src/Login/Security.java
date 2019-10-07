@@ -11,4 +11,11 @@ package Login;
  */
 public class Security {
     
+    private User userLog;
+            
+    public Security (User userl){
+        
+    
+}
+    
 }
