@@ -12,7 +12,7 @@ import java.util.Random;
  */
 public class Authenticator {
     
-    private String authKey;
+    protected String authKey;
     protected int ranNum;
     
     public Authenticator(Security userLogin){
@@ -28,6 +28,20 @@ public class Authenticator {
             this.authKey = null;
         }
         
+    }
+
+    /**
+     * @return the authKey
+     */
+    public String getAuthKey() {
+        return authKey;
+    }
+
+    /**
+     * @param authKey the authKey to set
+     */
+    public void setAuthKey(String authKey) {
+        this.authKey = authKey;
     }
     
 }
