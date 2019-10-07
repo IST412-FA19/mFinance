@@ -13,9 +13,9 @@ import edu.psu.ist412.employees.Employee;
  */
 public class TestHarness {
     
-    public TestHarness() {
+    public static void main (String[] args) {
 
-		Employee Employee = new Employee("CK321", "5uperM@n", "Clark", "Kent", "7575551234", "CKent@mFinance.com","09/25/1950");
+		Employee Employee = new Employee("CK321", "5uperM@n", "Clark", "Kent", 7575551234.0, "CKent@mFinance.com","09/25/1950");
 
 		if (Employee != null) {
 			System.out.println("Employee created successfully");
@@ -27,7 +27,7 @@ public class TestHarness {
                         Employee.setEmployeePassword("3@tMan");
                         Employee.setFirstName("Bruce");
                         Employee.setLastName("Wayne");
-                        Employee.setEmployeePhone("9805550987");
+                        Employee.setEmployeePhone(9805550987.0);
                         Employee.setEmployeeEmail("BWayne@mFinance.com");
                         Employee.setEmployeeDOB("05/03/1988");
                         
