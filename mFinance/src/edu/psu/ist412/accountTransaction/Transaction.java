@@ -14,15 +14,14 @@ public class Transaction {
     private String lastName;
     private double transfer_amnt;
     private boolean balanceVerified;       
-    private long transactionID;
+    private final String transactionNum;
     /*
     * 
     */
     public Transaction(){
-        this.transactionID = getNextIDNum();
+        transactionNum = getTransactionNum();
     }
         
-    
     /**
      * Returns customerFirstName for this transaction
      * @return A string representing the customer name for this account
@@ -54,17 +53,10 @@ public class Transaction {
     }
     
     /**
-     * Returns a transactionID
-     * @return A long representing the transactionID for the fund transfer
+     * Returns a getTransactionNum
+     * @return A String representing the transactionID for the fund transfer
      */
-    public long transactionID(){
-        return this.transactionID;
-    }
-    /**
-     * Returns the next transactionID from index
-     */
-    public long getNextIDNum(){
-        return 32393999;
-    }
-    
+    public String getTransactionNum(){
+        return this.transactionNum;
+    }   
 }

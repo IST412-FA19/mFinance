@@ -10,12 +10,9 @@ import static java.time.LocalDate.now;
  * @author Randi Semera
  */
 public class Account {
-    private Customer customer;
-    private LocalDate customerCreationDate;
-    private String accountStatus;
-    private String firstName;
-    private String lastName;
-    private String email;
+    private final LocalDate customerCreationDate;
+    private String accountStatus = "Delinquint";
+    private final Customer customer;
     
     /**
      * Instantiates a user account initiating the customerCreationDate based off
@@ -23,28 +20,11 @@ public class Account {
      * an application before creating an account, the following method and parameters 
      * will take form data to create customer and account.
      */
-    public Account(String first, String last, String email){
-        this.customerCreationDate = now();
-        this.firstName = first;
-        this.lastName = last;
-        this.email = email;   
+    public Account(Customer c){
+        this.customerCreationDate = now();   
+        customer = c;
     }
 
-    /**
-     * Returns customer object in order to obtain further customer info: address, email, dob, etc
-     * @return Customer type
-     */
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    /**
-     * Takes customer as input to access customer details.
-     * @param Customer object
-     */
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
 
     /**
      * method to retrieve the date of account creation

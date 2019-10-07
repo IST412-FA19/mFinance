@@ -43,7 +43,7 @@ public class CustomerCreditCheckAPI {
         return this.creditHistory;
     }
     /**
-     * Returns the count of delinquent payments greater 30 days late
+     * Returns the count of delinquent payments greater than 30 days late
      * @return An int representing the number of delinquent payments over 30 days late
      */
     public int del_payments_30(){

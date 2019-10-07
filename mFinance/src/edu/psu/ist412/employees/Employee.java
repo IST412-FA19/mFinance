@@ -21,11 +21,12 @@ public class Employee {
     private String employeePassword;
     private String firstName;
     private String lastName;
-    private int employeePhone;
+    private String employeePhone;
     private String employeeEmail;
     private String employeeDOB;
+    private String privileges;
 
-    public Employee(String employeeID, String employeePassword, String firstName, String lastName, int employeePhone, String employeeEmail, String employeeDOB) {
+    public Employee(String employeeID, String employeePassword, String firstName, String lastName, String employeePhone, String employeeEmail, String employeeDOB) {
         this.employeeID = employeeID;
         this.employeePassword = employeePassword;
         this.firstName = firstName;
@@ -67,11 +68,11 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public int getEmployeePhone() {
+    public String getEmployeePhone() {
         return employeePhone;
     }
 
-    public void setEmployeePhone(int employeePhone) {
+    public void setEmployeePhone(String employeePhone) {
         this.employeePhone = employeePhone;
     }
 
@@ -89,6 +90,10 @@ public class Employee {
 
     public void setEmployeeDOB(String employeeDOB) {
         this.employeeDOB = employeeDOB;
+    }
+    
+    public String getPrivileges(){
+        return privileges;
     }
 
 }

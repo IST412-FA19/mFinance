@@ -13,14 +13,14 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String email;
-    private Date dob;
+    private String dob;
     private LocalDate customerCreationDate; 
     
     /*The customer class will contain the basic information of users of the system.
     The API will provide access to the customer information that is contained within
     the application. 
     */
-    public Customer(String first, String last, String email, Date birthday){
+    public Customer(String first, String last, String email, String birthday){
         this.firstName = first;
         this.lastName = last;
         this.email = email;
