@@ -11,7 +11,7 @@ package edu.psu.ist412.employees;
  */
 public class LoanProcessEmployee extends Employee {
     
-    public LoanProcessEmployee(String employeeID, String employeePassword, String firstName, String lastName, double employeePhone, String employeeEmail, String employeeDOB) {
+    public LoanProcessEmployee(String employeeID, String employeePassword, String firstName, String lastName, String employeePhone, String employeeEmail, String employeeDOB) {
         super(employeeID, employeePassword, firstName, lastName, employeePhone, employeeEmail, employeeDOB);
     }
     

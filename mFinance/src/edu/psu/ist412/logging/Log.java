@@ -35,6 +35,6 @@ public class Log {
      * @return An array of all current logs. 
      */
     public LogEntry[] getLogMessages() {
-        return (LogEntry[]) logEntries.toArray();
+        return logEntries.toArray(new LogEntry[logEntries.size()]);
     }
 }

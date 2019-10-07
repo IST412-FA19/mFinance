@@ -11,7 +11,7 @@ package edu.psu.ist412.employees;
  */
 public class Administrator extends Employee {
 
-    public Administrator(String employeeID, String employeePassword, String firstName, String lastName, int employeePhone, String employeeEmail, String employeeDOB) {
+    public Administrator(String employeeID, String employeePassword, String firstName, String lastName, String employeePhone, String employeeEmail, String employeeDOB) {
         super(employeeID, employeePassword, firstName, lastName, employeePhone, employeeEmail, employeeDOB);
         
         
