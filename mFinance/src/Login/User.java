@@ -13,12 +13,11 @@ public class User {
     protected String userName;
     protected String userPass;
     
-    
+    //Insantiates user for application login id and password
     public User(String uName, String uPass){
         
         this.userName = uName;
         this.userPass = uPass;
-    
 }
 
     /**

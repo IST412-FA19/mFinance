@@ -24,6 +24,7 @@ public class Employee {
     private String employeePhone;
     private String employeeEmail;
     private String employeeDOB;
+    private String privileges;
 
     public Employee(String employeeID, String employeePassword, String firstName, String lastName, String employeePhone, String employeeEmail, String employeeDOB) {
         this.employeeID = employeeID;
@@ -89,6 +90,10 @@ public class Employee {
 
     public void setEmployeeDOB(String employeeDOB) {
         this.employeeDOB = employeeDOB;
+    }
+    
+    public String getPrivileges(){
+        return privileges;
     }
 
 }
