@@ -8,6 +8,7 @@ import edu.psu.ist412.customers.Customer;
 import edu.psu.ist412.customers.CustomerList;
 import edu.psu.ist412.employees.Administrator;
 import edu.psu.ist412.employees.Employee;
+import edu.psu.ist412.loans.Loan;
 import edu.psu.ist412.logging.FacilityCode;
 import edu.psu.ist412.logging.Log;
 import edu.psu.ist412.logging.LogEntry;
@@ -148,5 +149,20 @@ public class TestHarness {
         System.out.println("Entry information: " + testEntry.toString());
     }
     
+    public static void testLoan() {
+        System.out.println("-----------Loan Testing------------");
+ 
+        Loan l = new Loan(1, 1000, new Customer("John", "Johnson", "jj@yahoo", "date of birth"));
+ 
+        System.out.println("Loan ID: " + l.getLoanID() + ", Loan Amount: " + l.getLoanAmount()
+                + " Customer Info: " + l.getCustomerInfo());
+ 
+        l.setLoanID(15);
+        l.setLoanAmount(6000);
+        l.setCustomer(new Customer("Mike", "Michaelson", "mm@hotmail", "birthday"));
+ 
+        System.out.println("Loan ID: " + l.getLoanID() + ", Loan Amount: " + l.getLoanAmount()
+                + " Customer Info: " + l.getCustomerInfo());
+    }
     
 }
