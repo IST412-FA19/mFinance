@@ -1,7 +1,8 @@
+package edu.psu.ist412.test;
 
-import Login.Authenticator;
-import Login.Security;
-import Login.User;
+import edu.psu.ist412.authentication.Authenticator;
+import edu.psu.ist412.authentication.Security;
+import edu.psu.ist412.authentication.User;
 import edu.psu.ist412.account.Account;
 import edu.psu.ist412.customers.Customer;
 import edu.psu.ist412.employees.Administrator;
@@ -33,7 +34,6 @@ public class TestHarness {
         testAccount(new Customer(employee.getFirstName(), employee.getLastName(), employee.getEmployeeEmail(), employee.getEmployeeDOB()));
         testLog();
         testLogEntry();
-
     }
     
     // Tests Employee class instantiation (Administrator) and internal methods. Should 
@@ -84,19 +84,6 @@ public class TestHarness {
         else{
             System.out.println("No user account found");
         }
-    }
-			// Change User Info
-                        test.setEmployeeID("BW543");
-                        test.setEmployeePassword("3@tMan");
-                        test.setFirstName("Bruce");
-                        test.setLastName("Wayne");
-                        test.setEmployeePhone("9805550987");
-                        test.setEmployeeEmail("BWayne@mFinance.com");
-                        test.setEmployeeDOB("05/03/1988");
-                        
-                        System.out.println("Employee information: " + test.getClass() + " " + test.getEmployeeID() + " " + test.getEmployeePassword() + " " + test.getFirstName() + 
-                                test.getLastName() + " " + test.getEmployeePhone() + " " + test.getEmployeeEmail() + " " + test.getEmployeeDOB());		}
-    
     }
     
     /**
