@@ -55,6 +55,10 @@ public class Loan {
         this.customer = customer;
     }
     
+    
+     public String getCustomerInfo(){
+       return customer.toString();
+    }
     /* The Loan class will contain the information about existing loans and it 
     will contain the process logic to help issue and maintain loans for customers
     The API will allow other modules to pull the required information from the loan
