@@ -11,4 +11,12 @@ package edu.psu.ist412.loans;
  */
 public class LoanView {
     
+    public LoanView(){
+        
+    }
+    
+    public void loanDisplay(){
+        System.out.println("");
+    }
+    
 }

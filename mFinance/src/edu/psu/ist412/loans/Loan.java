@@ -28,6 +28,37 @@ public class Loan {
         this.loanAmount = loanAmount;
         this.customer = customer;
     }
+
+    public int getLoanID() {
+        return loanID;
+    }
+
+    public void setLoanID(int loanID) {
+        this.loanID = loanID;
+    }
+
+    public double getLoanAmount() {
+        return loanAmount;
+    }
+
+    public void setLoanAmount(double loanAmount) {
+        this.loanAmount = loanAmount;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    @Override
+    public String toString() {
+        return "Loan{" + "loanID=" + loanID + ", loanAmount=" + loanAmount + ", customer=" + customer + '}';
+    }
+    
+    
     
     
 }
