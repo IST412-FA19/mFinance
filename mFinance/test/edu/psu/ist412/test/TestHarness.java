@@ -10,7 +10,6 @@ import edu.psu.ist412.employees.Employee;
 import edu.psu.ist412.logging.FacilityCode;
 import edu.psu.ist412.logging.Log;
 import edu.psu.ist412.logging.LogEntry;
-import edu.psu.ist412.logging.LoggingController;
 import edu.psu.ist412.logging.MessageId;
 import edu.psu.ist412.logging.Severity;
 
