@@ -98,8 +98,12 @@ public class TestHarness {
         System.out.println("User1:\nFirstname " + cust1.getFirstName()+ "\nLastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
         System.out.print("\nUser2:\nFirstname " + cust2.getFirstName()+ "\nLastname: " + cust2.getLastName() + "\nEmail: " + cust2.getEmail() + "\nDOB: " + cust2.getDob());
     
-        CustomerList custList = new CustomerList(cust1);
+        CustomerList custList = new CustomerList();
         
+        custList.setCustomer(cust1);
+        custList.setCustomer(cust2);
+        
+        System.out.print(custList.getCustomerList().indexOf(0));
 
     
     }
