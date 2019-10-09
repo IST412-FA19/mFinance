@@ -28,6 +28,8 @@ public class TestHarness {
         
         //Testing Employee Class (using Administrator to test subclass)
         testEmployee(employee);
+        //Test Customer
+        testCustomer();
         //Tests User Authentication
         testLogin(user);
         //Tests Customer Account information
@@ -91,7 +93,7 @@ public class TestHarness {
     public static void testCustomer(){
         Customer cust1 = new Customer("John","Smith","jsmith@test.com","01/01/2000");
         System.out.println("\n<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>> \nTesting Customer Classes");
-        System.out.println("Firstname " + cust1.getFirstName()+ " Lastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
+        System.out.println("Firstname " + cust1.getFirstName()+ "\nLastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
         
     }
     /**
