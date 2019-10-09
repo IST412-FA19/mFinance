@@ -12,6 +12,11 @@ public class CustomerList {
     protected Customer customer;
     protected ArrayList<Customer> customerList;
     
+    public CustomerList(){
+        
+        
+        
+    }
     public CustomerList(Customer cust){
         
         ArrayList<Customer> customerList = new ArrayList<Customer>();
