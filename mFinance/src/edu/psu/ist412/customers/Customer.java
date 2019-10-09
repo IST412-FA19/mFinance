@@ -13,7 +13,7 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String email;
-    private String dob;
+    protected String dob;
     private LocalDate customerCreationDate; 
     
     /*The customer class will contain the basic information of users of the system.
@@ -67,6 +67,20 @@ public class Customer {
      */    
     public String getEmail(){
         return this.email;
+    }
+
+    /**
+     * @return the dob
+     */
+    public String getDob() {
+        return dob;
+    }
+
+    /**
+     * @param dob the dob to set
+     */
+    public void setDob(String dob) {
+        this.dob = dob;
     }
         
 }
