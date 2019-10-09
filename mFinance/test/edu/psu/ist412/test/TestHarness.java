@@ -103,7 +103,7 @@ public class TestHarness {
         custList.setCustomer(cust1);
         custList.setCustomer(cust2);
         
-        System.out.print(custList.getCustomerList().indexOf(0));
+        //System.out.print(custList.getCustomerList().indexOf(0));
 
     
     }
