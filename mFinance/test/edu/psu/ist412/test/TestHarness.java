@@ -99,6 +99,8 @@ public class TestHarness {
         System.out.print("\nUser2:\nFirstname " + cust2.getFirstName()+ "\nLastname: " + cust2.getLastName() + "\nEmail: " + cust2.getEmail() + "\nDOB: " + cust2.getDob());
     
         CustomerList custList = new CustomerList(cust1);
+        
+
     
     }
     /**
