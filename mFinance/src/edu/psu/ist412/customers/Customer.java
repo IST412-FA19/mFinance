@@ -14,7 +14,7 @@ public class Customer {
     private String lastName;
     private String email;
     protected String dob;
-    private LocalDate customerCreationDate; 
+    protected LocalDate customerCreationDate; 
     
     /*The customer class will contain the basic information of users of the system.
     The API will provide access to the customer information that is contained within
@@ -81,6 +81,20 @@ public class Customer {
      */
     public void setDob(String dob) {
         this.dob = dob;
+    }
+
+    /**
+     * @return the customerCreationDate
+     */
+    public LocalDate getCustomerCreationDate() {
+        return customerCreationDate;
+    }
+
+    /**
+     * @param customerCreationDate the customerCreationDate to set
+     */
+    public void setCustomerCreationDate(LocalDate customerCreationDate) {
+        this.customerCreationDate = customerCreationDate;
     }
         
 }
