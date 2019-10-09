@@ -92,9 +92,10 @@ public class TestHarness {
      */
     public static void testCustomer(){
         Customer cust1 = new Customer("John","Smith","jsmith@test.com","01/01/2000");
+        Customer cust2 = new Customer("Jane","Doe","jdoe@test.com","12/31/1999");
         System.out.println("\n<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>> \nTesting Customer Classes");
-        System.out.println("Firstname " + cust1.getFirstName()+ "\nLastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
-        
+        System.out.println("User1:\nFirstname " + cust1.getFirstName()+ "\nLastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
+        System.out.print(cust2);
     }
     /**
      * Runs through a test of the Log class's functionality.
