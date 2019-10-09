@@ -126,4 +126,14 @@ public class TestHarness {
         System.out.println("Log entry created successfully");
         System.out.println("Entry information: " + testEntry.toString());
     }
+    
+    /**
+     * Runs through a test of the Customer class's public constructor functionality.
+     */
+    public static void testCustomer(){
+        Customer cust1 = new Customer("John","Smith","jsmith@test.com","01/01/2000");
+        System.out.println("\n<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>> \nTesting Customer Classes");
+        System.out.println("Firstname " + cust1.getFirstName()+ " Lastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
+        
+    }
 }
