@@ -13,18 +13,18 @@ import java.util.ArrayList;
  */
 public class LoanList {
     
-    private ArrayList<Loan> loanList;
+    private ArrayList<LoanDetails> loanList;
     
     public LoanList(ArrayList loanlist){
         this.loanList = loanlist;
         
     }
     
-    public ArrayList<Loan> getLoanList(){
+    public ArrayList<LoanDetails> getLoanList(){
         return loanList;
     }
     
-    public void setLoanList(ArrayList<Loan> loanList){
+    public void setLoanList(ArrayList<LoanDetails> loanList){
         this.loanList = loanList;
     }
     

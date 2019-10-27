@@ -5,6 +5,8 @@
  */
 package edu.psu.ist412.app;
 
+import edu.psu.ist412.login.LoginController;
+
 /**
  *
  * @author swhealon
@@ -15,12 +17,7 @@ public class App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-	//Just testing -Rsemera
-        //testing -qabbani
-        //testing again - Q
-        
-        //Testing - Greg R
+        LoginController l = new LoginController();
     }
     
 }
