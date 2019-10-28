@@ -7,7 +7,7 @@ package edu.psu.ist412.reporting;
 
 import edu.psu.ist412.customers.Customer;
 import edu.psu.ist412.employees.Employee;
-import edu.psu.ist412.loans.Loan;
+import edu.psu.ist412.loans.LoanDetails;
 
 /**
  * API used to get reports for financial regulators.
@@ -43,8 +43,8 @@ public class ReportingAPI {
      * @param customer Customer for whom loans should be searched.
      * @return List of the customer's historical loans.
      */
-    public Loan[] getLoansByCustomer(Customer customer) {
-        return new Loan[] {};
+    public LoanDetails[] getLoansByCustomer(Customer customer) {
+        return new LoanDetails[] {};
     }
     
     /**
@@ -53,7 +53,7 @@ public class ReportingAPI {
      * @param employee The employee who's loan history should be searched.
      * @return A list of all loans handled by the specified employee.
      */
-    public Loan[] getLoansByEmployee(Employee employee) {
-        return new Loan[] {};
+    public LoanDetails[] getLoansByEmployee(Employee employee) {
+        return new LoanDetails[] {};
     }
 }

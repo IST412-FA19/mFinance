@@ -8,7 +8,7 @@ import edu.psu.ist412.customers.Customer;
 import edu.psu.ist412.customers.CustomerList;
 import edu.psu.ist412.employees.Administrator;
 import edu.psu.ist412.employees.Employee;
-import edu.psu.ist412.loans.Loan;
+import edu.psu.ist412.loans.LoanDetails;
 import edu.psu.ist412.logging.FacilityCode;
 import edu.psu.ist412.logging.Log;
 import edu.psu.ist412.logging.LogEntry;
@@ -31,11 +31,11 @@ public class TestHarness {
         //Testing Employee Class (using Administrator to test subclass)
         testEmployee(employee);
         //Test Customer
-        testCustomer();
+        //testCustomer();
         //Tests User Authentication
         testLogin(user);
         //Tests Customer Account information
-        testAccount(new Customer(employee.getFirstName(), employee.getLastName(), employee.getEmployeeEmail(), employee.getEmployeeDOB()));
+        //testAccount(new Customer(employee.getFirstName(), employee.getLastName(), employee.getEmployeeEmail(), employee.getEmployeeDOB()));
         testLog();
         testLogEntry();
     }
@@ -92,22 +92,22 @@ public class TestHarness {
     /**
      * Runs through a test of the Customer class's public constructor functionality.
      */
-    public static void testCustomer(){
-        Customer cust1 = new Customer("John","Smith","jsmith@test.com","01/01/2000");
-        Customer cust2 = new Customer("Jane","Doe","jdoe@test.com","12/31/1999");
-        System.out.println("\n<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>> \nTesting Customer Classes");
-        System.out.println("User1:\nFirstname " + cust1.getFirstName()+ "\nLastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
-        System.out.print("\nUser2:\nFirstname " + cust2.getFirstName()+ "\nLastname: " + cust2.getLastName() + "\nEmail: " + cust2.getEmail() + "\nDOB: " + cust2.getDob());
-    
-        CustomerList custList = new CustomerList();
-        
-        custList.setCustomer(cust1);
-        custList.setCustomer(cust2);
-        
-        //System.out.print(custList.getCustomerList().indexOf(0));
-
-    
-    }
+//    public static void testCustomer(){
+//        Customer cust1 = new Customer("John","Smith","jsmith@test.com","01/01/2000");
+//        Customer cust2 = new Customer("Jane","Doe","jdoe@test.com","12/31/1999");
+//        System.out.println("\n<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>> \nTesting Customer Classes");
+//        System.out.println("User1:\nFirstname " + cust1.getFirstName()+ "\nLastname: " + cust1.getLastName() + "\nEmail: " + cust1.getEmail() + "\nDOB: " + cust1.getDob());
+//        System.out.print("\nUser2:\nFirstname " + cust2.getFirstName()+ "\nLastname: " + cust2.getLastName() + "\nEmail: " + cust2.getEmail() + "\nDOB: " + cust2.getDob());
+//    
+//        CustomerList custList = new CustomerList();
+//        
+//        custList.setCustomer(cust1);
+//        custList.setCustomer(cust2);
+//        
+//        //System.out.print(custList.getCustomerList().indexOf(0));
+//
+//    
+//    }
     /**
      * Runs through a test of the Log class's functionality.
      */
@@ -149,20 +149,20 @@ public class TestHarness {
         System.out.println("Entry information: " + testEntry.toString());
     }
     
-    public static void testLoan() {
-        System.out.println("-----------Loan Testing------------");
- 
-        Loan l = new Loan(1, 1000, new Customer("John", "Johnson", "jj@yahoo", "date of birth"));
- 
-        System.out.println("Loan ID: " + l.getLoanID() + ", Loan Amount: " + l.getLoanAmount()
-                + " Customer Info: " + l.getCustomerInfo());
- 
-        l.setLoanID(15);
-        l.setLoanAmount(6000);
-        l.setCustomer(new Customer("Mike", "Michaelson", "mm@hotmail", "birthday"));
- 
-        System.out.println("Loan ID: " + l.getLoanID() + ", Loan Amount: " + l.getLoanAmount()
-                + " Customer Info: " + l.getCustomerInfo());
-    }
+//    public static void testLoan() {
+//        System.out.println("-----------Loan Testing------------");
+// 
+//        LoanDetails l = new LoanDetails(1, 1000, new Customer("John", "Johnson", "jj@yahoo", "date of birth"));
+// 
+//        System.out.println("Loan ID: " + l.getLoanID() + ", Loan Amount: " + l.getLoanAmount()
+//                + " Customer Info: " + l.getCustomerInfo());
+// 
+//        l.setLoanID(15);
+//        l.setLoanAmount(6000);
+//        //l.setCustomer(new Customer("Mike", "Michaelson", "mm@hotmail", "birthday"));
+// 
+//        System.out.println("Loan ID: " + l.getLoanID() + ", Loan Amount: " + l.getLoanAmount()
+//                + " Customer Info: " + l.getCustomerInfo());
+//    }
     
 }
